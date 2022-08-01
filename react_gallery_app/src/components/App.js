@@ -62,7 +62,7 @@ fetch(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key
     };
 
 
-//Route setup so we can switch from different paths
+//Route setup
   render () {
     return (
       <BrowserRouter>

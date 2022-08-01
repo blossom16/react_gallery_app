@@ -8,11 +8,10 @@ class Search extends Component {
         super(props);
         this.state ={
           value: '',
-          //lastSearch: ''
         }
       }
 
-    //This will let the history be able to display previous images again when using the browser back and forward buttons.
+    //Displays previous images again when using the browser back and forward buttons.
     componentDidUpdate(prevProps) {
         if(prevProps.location.pathname !== this.props.location.pathname) {
             if(this.props.location.pathname.includes("/search")){
